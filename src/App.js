@@ -8,6 +8,8 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 import Navbar from './components/Navbar';
+import MovieList from './components/MovieList';
+
 
 function App() {
   return (
@@ -18,10 +20,12 @@ function App() {
           justifyContent={{ base: 'center', sm: 'space-between' }}
           alignItems="center"
           flexWrap="wrap"
+          bg="teal.500"
         >
           <Navbar />
           <ColorModeSwitcher />
         </Flex>
+        <MovieList />
       </Box>
       
     </ChakraProvider>
